@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Vigonftion</title>
+	<!-- styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<ul class="list">
+							<li class="list-item">
+								<i class="fas fa-envelope"></i>
+								<p class="list-item__text">Kauf auf Rechnung</p>
+							</li>
+							<li class="list-item">
+								<i class="fas fa-truck"></i>
+								<p class="list-item__text">Kostenloser Versand ab 35€</p>
+							</li>
+							<li class="list-item">
+								<i class="fas fa-box"></i>
+								<p class="list-item__text">1-3 Tage Lieferzeit</p>
+							</li>
+							<li class="list-item">
+								<i class="fas fa-check"></i>
+								<p class="list-item__text">Made in Germany</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 align-self-center">
+						<div class="icons">
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-facebook-square"></i>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+						<nav class="nav">
+							<ul class="list">
+								<li class="list-item">
+									<a class="list-item__link" href="">Products</a>
+								</li>
+								<li class="list-item">
+									<a class="list-item__link" href="">About Us</a>
+								</li>
+								<li class="list-item">
+									<a class="list-item__link" href="#">
+										<img class="img" src="img/logo.png" alt="logo">
+									</a>									
+								</li>
+								<li class="list-item">
+									<a class="list-item__link" href="">Blog</a>
+								</li>
+								<li class="list-item">
+									<a class="list-item__link" href="">Life Coach</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 align-self-center fix">
+						<div class="icons">
+							<i class="fas fa-shopping-cart"></i>
+							<i class="far fa-user"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="seporator"></div>
+		</div>
+	</header>
+	<!-- /header -->
+	
+	<section class="product">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-start">
+					<div class="product-image">
+						<img src="img/main_product.png" alt="product" class="product-image__img">
+					</div>
+				</div>
+
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="product-description">
+						<h1 class="product-description__title">Strong mind</h1>
+						<p class="product-description__text">here go your subtitle text</p>
+						<div class="rating">
+							<div class="rating-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<div class="rating-comments">
+								<i class="fas fa-comment-alt"></i>
+								<a href="#" class="rating-comments__link">70 Bewertungen</a>
+							</div>
+						</div>
+
+						<div class="tabs">
+							<button class="tabs__btn tablink active" onclick="openTab(event, 'Description')">Description</button>
+							<button class="tabs__btn tablink" onclick="openTab(event, 'Ingredients')">Ingredients</button>
+							<button class="tabs__btn tablink" onclick="openTab(event, 'Intake')">Intake</button>
+							<div class="separator"></div>
+						</div>
+
+						<div id="Description" class="desc tbs">
+							<ul class="list">
+								<li class="list-item">
+									<p class="list-item__text"><i class="fas fa-circle"></i> Vitamin C, D und Zink tragen zu einem widerstandsfähigen Immunsystem bei</p>
+								</li>
+								<li class="list-item">
+									<p class="list-item__text"><i class="fas fa-circle"></i> Wertvolle Pflanzenextrakte wie u.a. Andrographiskraut, Süßholz, Gelbwurzel, Ingwer und Zyperngras</p>
+								</li>
+								<li class="list-item">
+									<p class="list-item__text"><i class="fas fa-circle"></i> Zwei-Handvoll unserer erlesenen Pflanzen in einer einzigen Kapsel</p>
+								</li>
+								<li class="list-item">
+									<p class="list-item__text"><i class="fas fa-circle"></i> Rezeptur basierend auf jahrelanger und intensiver Forschung</p>
+								</li>
+							</ul>
+						</div>
+
+						<div id="Ingredients" class="ing tbs" style="display:none">
+							<div class="ing-block">
+								<span class="ing-block__span">Niacin</span>
+								<span class="ing-block__span">Pantothensaure</span>
+								<span class="ing-block__span">Thiamin</span>
+								<span class="ing-block__span">Riboflavin</span>
+								<span class="ing-block__span">Vitamin B6</span>
+								<span class="ing-block__span">Folsaure</span>
+								<span class="ing-block__span">Biotin</span>
+							</div>
+							<div class="ing-block">
+								<span class="ing-block__span">16 mg</span>
+								<span class="ing-block__span">12 mg</span>
+								<span class="ing-block__span">2 mg</span>
+								<span class="ing-block__span">2 mg</span>
+								<span class="ing-block__span">2 mg</span>
+								<span class="ing-block__span">200 ug</span>
+								<span class="ing-block__span">200 ug</span>
+							</div>
+							<div class="ing-block">
+								<span class="ing-block__span">Vitamin D</span>
+								<span class="ing-block__span">Vitamin B12</span>
+								<span class="ing-block__span">Schlafbeere Extrakt</span>
+								<span class="ing-block__span">KleInes Fettblatt Extrakt</span>
+								<span class="ing-block__span">Basilikum Extrakt</span>
+								<span class="ing-block__span">Ingwer Extrakt</span>
+								<span class="ing-block__span">Monchspfeffer Extrakt</span>
+							</div>
+							<div class="ing-block">
+								<span class="ing-block__span">28 yg</span>
+								<span class="ing-block__span">16 yg</span>
+								<span class="ing-block__span">470 mg</span>
+								<span class="ing-block__span">280 mg</span>
+								<span class="ing-block__span">160 mg</span>
+								<span class="ing-block__span">160 mg</span>
+								<span class="ing-block__span">30 mg</span>
+							</div>
+						</div>
+
+						<div id="Intake" class="int tbs" style="display:none">
+							<p class="int__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, similique. Eveniet, similique, eos! Reiciendis maiores aspernatur, modi possimus! Sit est, sapiente eaque quidem ea porro, iure quae quis odit voluptatibus.</p>
+						</div>
+
+						<div class="seporator"></div>
+
+						<div class="features">
+							<div class="features-block">
+								<img src="img/prod1.png" alt="prod1" class="features-block__img">
+								<p class="features-block__text">Vegan ingridients</p>
+							</div>
+							<div class="features-block">
+								<img src="img/prod2.png" alt="prod2" class="features-block__img">
+								<p class="features-block__text">Sugar free</p>
+							</div>
+							<div class="features-block">
+								<img src="img/prod3.png" alt="prod3" class="features-block__img">
+								<p class="features-block__text">Gluten free</p>
+							</div>
+							<div class="features-block">
+								<img src="img/prod4.png" alt="prod4" class="features-block__img">
+								<p class="features-block__text">Lactose free</p>
+							</div>
+							<div class="features-block">
+								<img src="img/prod5.png" alt="prod5" class="features-block__img">
+								<p class="features-block__text">Without colours</p>
+							</div>
+
+							<div class="seporator"></div>
+
+							<div class="features-block">
+								<img src="img/prod6.png" alt="prod6" class="features-block__img">
+								<p class="features-block__text">Package contains 60 capsules</p>
+							</div>
+						</div>
+
+						<div class="seporator"></div>
+
+						<div class="buy">
+							<div class="buy-top">
+								<div class="tag">
+									<i class="fas fa-battery-quarter"></i>
+									<span class="tag__span">In stock</span>
+								</div>
+								<div class="tag">
+									<i class="fas fa-box"></i>
+									<span class="tag__span">Shipping time; 1-3 days</span>
+								</div>
+								<div class="tag">
+									<i class="far fa-envelope"></i>
+									<span class="tag__span">Kauf auf Rechnung</span>
+								</div>
+							</div>
+
+							<div class="buy-bottom">
+								<div class="cost">
+									<h2 class="cost__title">$20</h2>
+									<span class="cost__span">Inkl. MwSt. (39,99 €/1kg)</span>
+								</div>
+								<div class="amount">
+									<span class="amount__span">Amount</span>
+									<div class="quantity">
+										<button class="quantity__min"><i class="fas fa-chevron-left"></i></button>
+										<input class='quantity__price' value='1' type="number" readonly min="0">
+										<button class="quantity__plus"><i class="fas fa-chevron-right"></i></button>
+									</div>
+								</div>
+								<button class="buy-bottom__btn">put in cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /product -->
+
+	<section class="impact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<h1 class="impact__title">Impact</h1>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+					<p class="impact__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quae laboriosam dignissimos ad illo praesentium, amet, excepturi labore nostrum eos quisquam. Voluptate, totam, est. Officia atque iste aliquam, ut consequatur?</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 ">
+					<div class="circle">
+						<img src="img/circle.png" alt="circle" class="circle__img">
+						<!-- <span class="circle__span">Stressresistenz</span> -->
+						<img src="img/c1.png" alt="c1" class="c1">
+						<img src="img/c2.png" alt="c2" class="c2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /impact -->
+
+	<section class="slider">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<h1 class="slider__title">Was in unserer kapsel steck</h1>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+					<p class="impact__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quae laboriosam dignissimos ad illo praesentium, amet, excepturi labore nostrum eos quisquam. Voluptate, totam, est. Officia atque iste aliquam, ut consequatur?</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+					<div class="slider-capsule">
+						<img src="img/slider.png" alt="sl" class="slider-capsule__img">
+						<p class="slider-capsule__text">Slide blue line for more experience</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /slider -->
+
+	<section class="comparison">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<h1 class="comparison__title">Comparison</h1>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<img src="img/VS.png" alt="vs" class="comparison__img">
+				</div>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 align-self-center">
+					<div class="comparison-strong">
+						<h2 class="comparison-strong__title">Strong mind</h2>
+						<p class="comparison-strong__text">Vigonation</p>
+						<ul class="list">
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-check"></i> 100% rein pflanzliche Fütterung</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-check"></i> Weitläufige Weidene</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-check"></i> Rückstandsfrei</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-check"></i> Überlegenes Nährstoffprofil</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="comparison-common">
+						<h2 class="comparison-common__title">Common product</h2>
+						<p class="comparison-common__text">common company</p>
+						<ul class="list">
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-times"></i> Fütterung mit Gen-Soja</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-times"></i> Unnatürliche Lebensbedingungen</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-times"></i> Zufütterung</p>
+							</li>
+							<li class="list-item">
+								<p class="list-item__text"><i class="fas fa-times"></i> Schlechtes Verhältnis von Omega 3 und Omega 6</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /comparison -->
+
+
+	<!-- scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
