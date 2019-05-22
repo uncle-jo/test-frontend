@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Vigonftion</title>
 	<!-- styles -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/BeerSlider.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -44,8 +46,8 @@
 				<div class="row">
 					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 align-self-center">
 						<div class="icons">
-							<i class="fab fa-instagram"></i>
-							<i class="fab fa-facebook-square"></i>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
 						</div>
 					</div>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -58,7 +60,7 @@
 									<a class="list-item__link" href="">About Us</a>
 								</li>
 								<li class="list-item">
-									<a class="list-item__link" href="#">
+									<a class="list-item__link" href="index.html">
 										<img class="img" src="img/logo.png" alt="logo">
 									</a>									
 								</li>
@@ -253,6 +255,7 @@
 	<!-- /product -->
 
 	<section class="impact">
+    <img src="img/bgimg.png" alt="bg" class="bg">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -292,8 +295,41 @@
 				</div>
 			</div>
 
-		</div>
-		<div class="container-fluid">
+      <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="fix">
+              <div id="slider" class="beer-slider" data-beer-label="">
+                <img src="img/slide1.png" alt="s1">
+                <div class="beer-reveal" data-beer-label="">
+                  <img src="img/slide3.png" alt="s2">
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <div class="info-first">
+                <span class="info-first__span">i</span>
+                <p class="info-first__text">Indischer Wassernabel</p>
+                <img class="info-first__img" src="img/line1.png" alt="line1">
+              </div>
+              <div class="info-second">
+                <span class="info-second__span">i</span>
+                <p class="info-second__text">Schlafbeere</p>
+                <img class="info-second__img" src="img/line2.png" alt="line2">
+              </div>
+              <div class="info-last">
+                <span class="info-last__span">i</span>
+                <p class="info-last__text">Ingwer</p>
+                <img class="info-last__img" src="img/line3.png" alt="line3">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+		<!-- <div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
 					<div class="slider-capsule">
@@ -302,7 +338,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 	<!-- /slider -->
 
@@ -363,10 +399,190 @@
 		</div>
 	</section>
 	<!-- /comparison -->
+  
+  <section class="parallax">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"></div>
+      </div>
+    </div>
+  </section>
+  <!-- /parallax -->
 
+  <section class="reviews">
+		<div class="container">
+			<div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="reviews-top">
+            <h3 class="reviews-top__title">Customer reviews</h3>
+            <div class="spans">
+              <span class="spans__span">5 <i class="fas fa-star"></i></span>
+              <span class="spans__span">40 <i class="fas fa-comment-alt"></i></span>
+            </div>            
+          </div>
+
+          <div class="seporator"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="scroll">
+            <ul class="list">
+
+              <div id="wrapper">
+                <div class="scrollbar" id="style-3">
+                  <div class="force-overflow">
+                    <li class="list-item">
+                      <div class="small">
+                        <span class="small__span">5 <i class="fas fa-star"></i></span>
+                        <span class="small__date">18.08.2016</span>
+                      </div>
+                      <div class="big">
+                        <h3 class="big__title">Dani</h3>
+                        <p class="big__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci laudantium dolor, quis autem cum sit placeat, facere laboriosam quasi amet fuga voluptatum sequi aliquam doloremque veniam totam quos tenetur!</p>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="small">
+                        <span class="small__span">4 <i class="fas fa-star"></i></span>
+                        <span class="small__date">18.08.2016</span>
+                      </div>
+                      <div class="big">
+                        <h3 class="big__title">Annika</h3>
+                        <p class="big__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci laudantium dolor, quis autem cum sit placeat, facere laboriosam quasi amet fuga voluptatum sequi aliquam doloremque veniam totam quos tenetur!</p>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="small">
+                        <span class="small__span">4 <i class="fas fa-star"></i></span>
+                        <span class="small__date">18.08.2016</span>
+                      </div>
+                      <div class="big">
+                        <h3 class="big__title">George</h3>
+                        <p class="big__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci laudantium dolor, quis autem cum sit placeat, facere laboriosam quasi amet fuga voluptatum sequi aliquam doloremque veniam totam quos tenetur!</p>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="small">
+                        <span class="small__span">5 <i class="fas fa-star"></i></span>
+                        <span class="small__date">18.08.2016</span>
+                      </div>
+                      <div class="big">
+                        <h3 class="big__title">Dani</h3>
+                        <p class="big__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci laudantium dolor, quis autem cum sit placeat, facere laboriosam quasi amet fuga voluptatum sequi aliquam doloremque veniam totam quos tenetur!</p>
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              
+            </ul>
+
+            <div class="load">
+              <button class="load__btn">
+                <i class="fas fa-sync-alt"></i>
+                <span class="span">Loading</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /reviews -->
+
+  <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="footer-top">
+              <div class="about">
+                <ul class="list">
+                  <li class="list-item"><span class="list-item__span span-title">Produkte</span></li>
+                  <li class="list-item"><span class="list-item__span">Dynamic motion</span></li>
+                  <li class="list-item"><span class="list-item__span">Health boost</span></li>
+                  <li class="list-item"><span class="list-item__span">Thinking power</span></li>
+                  <li class="list-item"><span class="list-item__span">Strong mind</span></li>
+                  <li class="list-item"><span class="list-item__span">Purest detox</span></li>
+                  <li class="list-item"><span class="list-item__span">Sleep + recover</span></li>
+                </ul>
+                <div class="seporator"></div>
+              </div>
+
+              <div class="big_block">
+                <div class="payment">
+                  <h3 class="payment__title">Forms of payment</h3>
+                  <div class="payment-block">
+                    <img src="img/Sofortüberweisung_Logo.svg.png" alt="sof" class="payment-block__img" style="margin-right: 36px;">
+                    <img src="img/Visa_logo.png" alt="visa" class="payment-block__img" style="margin-right: 38px;">
+                    <img src="img/PayPal.svg.png" alt="paypal" class="payment-block__img">
+                  </div>
+                  <div class="payment-block">
+                    <img src="img/Klarna-Logo.png" alt="klana" class="payment-block__img" style="margin-right: 32px;">
+                    <img src="img/Layer 66.png" alt="amazon" class="payment-block__img" style="margin-right: 29px;">
+                    <img src="img/MasterCard_Logo.svg.png" alt="master" class="payment-block__img">
+                  </div>                  
+                </div>
+                <div class="partner">
+                  <h3 class="partner__title">Shipping partner</h3>
+                  <img src="img/Dhl_logo.svg.png" alt="dhl" class="partner__img">
+                </div>
+                <div class="contact">
+                  <h3 class="contact__title">Contact us</h3>
+                  <div class="block">
+                    <div class="block-d">
+                      <span class="block-d__span">Kontakt</span>
+                      <span class="block-d__span">Versang & Lieferung</span>
+                    </div>
+                    <div class="block-d">
+                      <span class="block-d__span">Widerruf</span>
+                      <span class="block-d__span">Zahlungsarten</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fold">
+                  <h3 class="fold__title">Folde uns</h3>
+                  <div class="soc">
+                    <a class="soc__link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="soc__link" href="#"><i class="fab fa-facebook-square"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="fix">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+              <div class="footer-bottom">
+                <span class="footer-bottom__span">Impressum</span>
+                <span class="footer-bottom__span">Datenschutz</span>
+                <span class="footer-bottom__span">AGB</span>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+              <div class="footer-bottom">
+                <a href="index.html"><img src="img/footerlogo.png" alt="flogo" class="footer-bottom__img"></a>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+              <div class="footer-bottom">
+                <p class="footer-bottom__text">Developed by <a href="#" class="link">EVNE</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+  <!-- /footer -->
 
 	<!-- scripts -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>
+  <script src="js/BeerSlider.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

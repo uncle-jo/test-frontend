@@ -23,3 +23,5 @@ $(".quantity__min").click(function() {
   $price.change();
 });
 
+
+new BeerSlider(document.getElementById('slider'));
